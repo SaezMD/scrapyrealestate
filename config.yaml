@@ -1,7 +1,7 @@
 ---
 log_level: INFO # Nivel de log: CRITICAL, ERROR, WARNING, INFO, DEBUG
-scrapy_time_update: 900 # Tiempo (minimo 300) entre cada búsqueda (en segundos)
-telegram_chatuserID: -1001551344046 # ID del chat telegram - Example: -1001647968011
+scrapy_time_update: 500 # Tiempo (minimo 300) entre cada búsqueda (en segundos)
+telegram_chatuserID: -1001678699889 # ID del chat telegram - Example: -1001647968011
 
 flat_details:
   max_price: 0 # Precio maximo de filtro (0 = sin limite)
@@ -9,22 +9,23 @@ flat_details:
 idealista_data:
   db_name: idealista
   urls:
-    # - https://www.idealista.com/alquiler-viviendas/lugar-lugar/
-    - https://www.idealista.com/alquiler-viviendas/barcelona-barcelona/
+    - https://www.idealista.com/venta-viviendas/madrid/hortaleza/
+
 
 pisoscom_data:
   db_name: pisoscom
   urls:
-    # - https://www.pisos.com/alquiler/pisos-lugar_capital/
-    - https://www.pisos.com/venta/pisos-girona/
+    - https://www.pisos.com/venta/pisos-fuencarral_el_pardo/
 
 fotocasa_data:
   db_name: fotocasa
-  urls: # En este caso, la url, los pisos tienen que estar ordenados por orden (nuevos primero) - Recomendado para ciudades pequeñas, barrios medianos y pueblos (aprox 300 vivendas en total) ya que solo coge las 3 primeras viviendas de la página.
-    - https://www.fotocasa.es/ca/lloguer/habitatges/girona-capital/totes-les-zones/l?sortType=publicationDate&latitude=41.983&longitude=2.8253&combinedLocationIds=724,9,17,241,426,17079,0,0,0
+  urls: 
+    - https://www.fotocasa.es/es/comprar/viviendas/madrid-capital/hortaleza/l?sortType=publicationDate&latitude=40.46881501855609&longitude=-3.641945499708502&combinedLocationIds=724,14,28,173,0,28079,0,678,0
+    #- shorturl.at/gxJT7
+    #- https://www.fotocasa.es/es/comprar/viviendas/madrid-capital/hortaleza/l?sortType=publicationDate&latitude=40.46881501855609&longitude=-3.641945499708502&maxPrice=1100000&minRooms=2&combinedLocationIds=724,14,28,173,0,28079,0,678,0
 
 habitaclia_data:
   db_name: habitaclia
   urls:
-    # - https://www.habitaclia.com/alquiler-lugar.htm
-    - https://www.habitaclia.com/alquiler-girona.htm
+    - https://www.habitaclia.com/viviendas-distrito_fuencarral_el_pardo-madrid.htm
+
